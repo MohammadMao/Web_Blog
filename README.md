@@ -1,7 +1,7 @@
 # Web_Blog
 
 This is a simple Weblog project using HTML, CSS, PHP and JS. 
-It is a group school project with @mohandhamad
+It is a group school project with [@mohandhamad](https://github.com/mohandhamad)
 
 ## What you need
 * Web Server (ex Apache)
