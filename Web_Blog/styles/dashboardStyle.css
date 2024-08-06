@@ -1,0 +1,212 @@
+/*
+dashboardStyle.css
+# Purpose: Style sheet for Dashboard page
+# Created by Alrasheed 20 Jun
+# Last modified by Mohanad 30 Jun
+*/
+
+/* themes colors */
+:root{
+    --primary-color: #f2f2f2;
+    --primary-color2: #ffffff;
+    --secondary-color: #333;
+    --secondary-color2: #666;
+}
+
+.dark-thame{
+    --primary-color: #313131;
+    --primary-color2: #494949;
+    --secondary-color: #fff;
+    --secondary-color2: #f7f7f7;
+}
+
+/* Default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+/* Navbar styling */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #40cf8f;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+#thame_icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+aside {
+    margin-bottom: 20px;
+    background-color: var(--primary-color2);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #40cf8f;
+}
+
+aside h1 {
+    font-family: Garamond, serif;
+}
+
+/* Profile class styling */
+.profile {
+    width: 30%;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h3, .profile h4 {
+    font-size: 1rem;
+    color: var(--secondary-color);
+}
+
+.profile form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.profile form label {
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.profile form input[type="file"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: var(--primary-color2);
+    color: var(--secondary-color);
+}
+
+.profile form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.profile form button:hover {
+    background-color: #45a049;
+}
+
+/* Main content styling */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+section {
+    background-color: var(--primary-color2);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 68%;
+    color: var(--secondary-color);
+}
+
+main section h1 {
+    color: #40cf8f;
+    font-family: Garamond, serif;
+}
+
+/* Post styling */
+.post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.post h3 {
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+}
+
+.post p {
+    color: var(--secondary-color2);
+    margin-bottom: 10px;
+}
+
+.post span {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.post a {
+    color: #007bff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    color: var(--secondary-color2);
+    font-size: 0.8rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}

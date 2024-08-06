@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="../styles/homeStyle.css">
+    <!-- styles for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <!-- dark theme script -->
+    <script src="../scripts/dark_thame.js"></script>
+</head>
+<body onload="pageMode()">
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-left">
+                <img src="../webblog.png" alt="logo" height="70px">
+            </div>
+            <div class="header-right">
+                <nav>
+                    <!-- Navbar -->
+                    <ul>
+                        <li><a href="index.html"><center><span class="material-icons">home</span></center>Home</a></li>
+                        <li><a href="about.html"><center><span class="material-symbols-outlined">info</span></center>About</a></li>
+                        <?php require_once('../php_processes/nav.php'); ?>
+                        <img src="../moon.png" alt="mode icon" id="thame_icon" onclick="changeMode()">
+                    </ul>
+                </nav>
+                <!-- Search bar -->
+                <form action="index.html" method="GET" class="search-form">
+                    <input type="text" name="query" placeholder="Search by user or post" required>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <section class="latest-posts">
+                <h2>About Us</h2>
+                <p>Welcome to Web Blog, your number one source for all things blogging. We're dedicated to giving you the very best of blog posts, with a focus on quality, reliability, and uniqueness.</p>
+                <p>Founded in 2024, Web Blog has come a long way from its beginnings. When we first started out, our passion for writing and sharing stories drove us to start our own blog.</p>
+                <p>We hope you enjoy our posts as much as we enjoy offering them to you. If you have any questions or comments, please don't hesitate to contact us.</p>
+                <p>Sincerely, The Web Blog Team</p>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <section class="social-media">
+                    <h3>Follow Us</h3>
+                    <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/capsocial-round/500/facebook-512.png" alt="Facebook">Facebook</a>
+                    <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_twitter-512.png" alt="Twitter">Twitter</a>
+                    <a href="#"><img src="https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_instagram-512.png" alt="Instagram">Instagram</a>
+                </section>
+            </aside>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Web Blog. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <p>Contact Information: info@webblog.com</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,227 @@
+/*
+homeStyle.css
+# Purpose: Style sheet for Hompage (index)
+# Created by Alrasheed 20 Jun
+# Last modified by Mohanad 30 Jun
+*/
+
+/* themes colors */
+:root{
+    --primary-color: #f2f2f2;
+    --primary-color2: #ffffff;
+    --secondary-color: #333;
+    --secondary-color2: #666;
+}
+
+.dark-thame{
+    --primary-color: #313131;
+    --primary-color2: #494949;
+    --secondary-color: #fff;
+    --secondary-color2: #f7f7f7;
+}
+
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.header-left h1 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+/* Navbar styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #40cf8f;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+#thame_icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Search bar styling */
+.search-form {
+    margin-left: 20px;
+    display: flex;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.search-form button {
+    background-color: #40cf8f;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Main */
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Posts styling */
+.latest-posts {
+    background-color: var(--primary-color2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap;
+    width: 80%;
+    color: var(--secondary-color);
+}
+
+.latest-posts h1, h2{
+    color: #40cf8f;
+    font-family: Garamond, serif;
+}
+
+.post {
+    box-sizing:border-box;
+    padding: 20px;
+    border-bottom: 1px solid ;
+    margin-bottom: 20px;
+}
+.post h2 {
+    margin-top: 0;
+}
+
+.post p {
+    text-justify: auto;
+}
+
+.post img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* likes & dislike buttons */
+#like {
+    color:#40cf8f;
+}
+
+#dislike {
+    color: red;
+}
+
+/* Sidebar styling */
+.sidebar {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.social-media {
+    background-color: var(--primary-color2);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    align-items: center; /* Center align items vertically */
+}
+
+.social-media h3 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #40cf8f;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding-left: 10px; /* Adjust padding for spacing */
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Create space between icon and text */
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #e9ecef;
+    text-align: center;
+    color: var(--secondary-color2);
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color2);
+    transition: color 0.3s ease;
+}
+
+footer nav ul li a:hover {
+    color: var(--secondary-color);
+}

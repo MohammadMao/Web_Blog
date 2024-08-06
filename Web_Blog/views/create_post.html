@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Post</title>
+    <link rel="stylesheet" href="../styles/postStyle.css">
+    <!-- Styles for icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    <!-- dark theme script -->
+    <script src="../scripts/dark_thame.js"></script>
+</head>
+<body onload="pageMode()">
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <div class="header-left">
+                <img src="../webblog.png" alt="logo" height="70px">
+            </div>
+            <div class="header-right">
+                <!-- Navbar -->
+                <nav>
+                    <ul>
+                        <li><a href="index.html"><center><span class="material-icons">home</span></center>Home</a></li>
+                        <li><a href="dashboard.php"><center><span class="material-symbols-outlined">space_dashboard</span></center>Dashboard</a></li>
+                        <li><a href="../php_processes/logout.php"><center><span class="material-symbols-outlined">logout</span></center>Logout</a></li>
+                        <img src="../moon.png" alt="mode icon" id="thame_icon" onclick="changeMode()">
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main -->
+        <main>
+            <section class="create-post">
+                <h2>Create a New Post</h2>
+                <!-- New post form -->
+                <form action="../php_processes/post.php" method="POST">
+                    <input type="text" name="title" placeholder="Post Title" required>
+                    <textarea name="content" placeholder="Write your post here..." rows="10"></textarea>
+                    <button type="submit">Create Post</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2024 Web Blog. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+            <p>Contact Information: info@webblog.com</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../styles/stylesLR.css">
+    <!-- Script for inputs validation -->
+    <script src="../scripts/registration.js"></script>
+</head>
+<body>
+    <div class="container">
+        <center><img src="../webblog.png" alt="logo" height="70px"></center>
+        <h2>Register</h2>
+        <!-- Registeration Form -->
+        <form id="registrationForm" enctype="multipart/form-data" >
+            <input type="text" name="username" id="username" placeholder="Username">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <input type="text" name="full_name" id="full_name" placeholder="Full Name">
+            <input type="file" name="profile_image" id="profile_image">
+            <button type="submit">Register</button>
+        </form>
+        <div id="errorMessages"></div>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+/*
+postStyle.css
+# Purpose: Style sheet for create/update post page
+# Created by Alrasheed 20 Jun
+# Last modified by Mohanad 30 Jun
+*/
+
+/* themes colors */
+:root{
+    --primary-color: #f2f2f2;
+    --primary-color2: #ffffff;
+    --secondary-color: #333;
+    --secondary-color2: #666;
+}
+
+.dark-thame{
+    --primary-color: #313131;
+    --primary-color2: #494949;
+    --secondary-color: #fff;
+    --secondary-color2: #f7f7f7;
+}
+
+
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--primary-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+}
+
+/* Navbar styling */
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #40cf8f;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #007bff;
+}
+
+#thame_icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Main */
+main {
+    background-color: var(--primary-color2);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Post form styling */
+.create-post {
+    margin-bottom: 20px;
+}
+
+.create-post h2 {
+    font-size: 1.8rem;
+    color: #40cf8f;
+    margin-bottom: 20px;
+}
+
+.create-post form {
+    display: flex;
+    flex-direction: column;
+}
+
+.create-post input[type="text"],
+.create-post textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.create-post textarea {
+    resize: vertical;
+}
+
+.create-post button {
+    padding: 10px 20px;
+    background-color: #40cf8f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.create-post button:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #ccc;
+    color: var(--secondary-color2);
+    font-size: 0.8rem;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer nav ul {
+    margin-top: 10px;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color2);
+}
+
+footer nav ul li a:hover {
+    color: var(--secondary-color);
+}
